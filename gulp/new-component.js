@@ -1,8 +1,5 @@
 var gulp = require('gulp'),
     lodash = require('lodash'),
-    rename = require('gulp-rename'),
-    conflict = require('gulp-conflict'),
-    template = require('gulp-template'),
     handlebars = require('handlebars'),
     fs = require('fs'),
     pluralize = require('pluralize');
