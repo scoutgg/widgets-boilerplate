@@ -4,11 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel src --out-dir build",
+    "serve": "budo src --dir . --dir build --serve application.js --live --open -- -t babelify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
   "dependencies": {
     "@scoutgg/widgets": "^2.0.0",
     "hyperhtml": "^2.13.0"
