@@ -8,7 +8,7 @@ gulp.task('create-component', function (done) {
   var answers = {component: process.argv.slice(2)[1]}
   answers.property = lodash.camelCase(answers.component)
   answers.component = lodash.kebabCase(answers.component)
-  answers.className = lodash.capitalize(answers.property)
+  answers.className = lodash.capitalize(answers.property[0]) + answers.property.slice(1, answers.property.length)
   answers.endpoint = pluralize(lodash.snakeCase(answers.property))
   if(!fs.existsSync(`${__dirname}/../src/components/${answers.component}`)) {
     fs.mkdirSync(`${__dirname}/../src/components/${answers.component}`)
