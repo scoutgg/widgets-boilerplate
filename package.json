@@ -16,7 +16,9 @@
   },
   "dependencies": {
     "@scoutgg/widgets": "^2.0.0",
-    "hyperhtml": "^2.13.0"
+    "hyperhtml": "^2.13.0",
+    "markdown-it": "^8.4.2",
+    "marked": "^0.5.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0",
