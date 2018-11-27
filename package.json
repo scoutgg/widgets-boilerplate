@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@scoutgg/widgets": "^2.0.0",
+    "cached-path-relative": "^1.0.2",
     "hyperhtml": "^2.13.0"
   },
   "devDependencies": {
